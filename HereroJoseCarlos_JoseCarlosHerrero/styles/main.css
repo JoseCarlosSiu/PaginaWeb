@@ -1,0 +1,258 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f5f5f5, #e0e0e0), url('./../images/fondo.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+    padding-right: 60px;
+}
+
+#logo {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    padding-left: 30px;
+}
+
+#foto2 {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    padding-left: 1px;
+}
+
+/* Menú de navegación */
+#menu-principal {
+    background-color: #ee8c1b;
+    padding: 15px 0;
+}
+
+#menu-principal ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+#menu-principal li {
+    margin: 0 20px;
+}
+
+#menu-principal a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#menu-principal a:hover {
+    background-color: #555;
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(216, 222, 231);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Banner */
+.banner {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.imagen-enlace {
+    width: 100%;
+    border-radius: 8px;
+    transition: opacity 0.3s;
+}
+
+.imagen-enlace:hover {
+    opacity: 0.8;
+}
+
+.tabla-estilo-pccomponentes {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabla-productos thead th {
+    background-color: #f04e23;
+    color: white;
+    padding: 14px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.tabla-productos  td {
+    padding: 14px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.tabla-productos tr:hover {
+    background-color: #f9f9f9;
+}
+
+.tabla-productos img {
+    width: 100px;
+    max-width: 120px;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+}
+
+.tabla-productos a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.boton-footer {
+    background-color: #f04e23;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-footer:hover {
+    background-color: #d4411f;
+}
+
+/*Estilos tema claro y oscuro
+ */
+
+body.tema-claro {
+    background: linear-gradient(to right, #f5f5f5, #e0e0e0), url('./../images/fondo.jfif');
+    color: #333;
+}
+
+body.tema-claro .contenedor-principal {
+    background-color: rgb(216, 222, 231);
+    color: #333;
+}
+
+body.tema-claro .tabla-productos {
+    background-color: #fff;
+    color: #333;
+}
+
+body.tema-oscuro {
+    background-color: #121212;
+    color: #ddd;
+    background-image: none;
+}
+
+body.tema-oscuro .contenedor-principal {
+    background-color: #1e1e1e;
+    color: #ddd;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+body.tema-oscuro .tabla-productos {
+    background-color: #292929;
+    color: #ddd;
+}
+
+body.tema-oscuro .tabla-productos thead th {
+    background-color: #bb86fc;
+    color: #121212;
+}
+
+body.tema-oscuro .tabla-productos tr:hover {
+    background-color: #3a3a3a;
+}
+
+body.tema-oscuro #menu-principal {
+    background-color: #bb86fc;
+}
+
+body.tema-oscuro #menu-principal a {
+    color: #121212;
+}
+
+body.tema-oscuro #menu-principal a:hover {
+    background-color: #7a52c6;
+}
+
+/*Botones de tema y juego */
+
+.boton-personalizado {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    margin-top: 20px;
+    user-select: none;
+}
+
+body.tema-claro .boton-personalizado {
+    background-color: #0078d7;
+    color: white;
+}
+
+body.tema-claro .boton-personalizado:hover {
+    background-color: #005a9e;
+}
+
+body.tema-oscuro .boton-personalizado {
+    background-color: #bb86fc;
+    color: #121212;
+    box-shadow: 0 6px 12px rgba(187, 134, 252, 0.6);
+}
+
+body.tema-oscuro .boton-personalizado:hover {
+    background-color: #985eff;
+}

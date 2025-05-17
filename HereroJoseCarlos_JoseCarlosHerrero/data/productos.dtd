@@ -1,0 +1,34 @@
+<!-- Elemento raíz que contiene una o más categorías, y opcionalmente promociones y envío -->
+<!ELEMENT productos (categoria+, promociones?, envio?)>
+
+<!-- Cada categoría contiene uno o más productos -->
+<!ELEMENT categoria (producto+)>
+<!ATTLIST categoria
+    id ID #REQUIRED           <!-- Identificador único de la categoría -->
+    nombre CDATA #REQUIRED    <!-- Nombre de la categoría -->
+>
+
+<!-- Cada producto tiene nombre, precio, marca y descripción -->
+<!ELEMENT producto (nombre, precio, marca, descripcion)>
+<!ATTLIST producto
+    sku ID #REQUIRED          <!-- Identificador único del producto (SKU) -->
+    stock CDATA #IMPLIED      <!-- Stock disponible (opcional) -->
+>
+
+<!-- Elementos simples para los datos del producto -->
+<!ELEMENT nombre (#PCDATA)>       <!-- Nombre del producto -->
+<!ELEMENT precio (#PCDATA)>      <!-- Precio del producto -->
+<!ELEMENT marca (#PCDATA)>       <!-- Marca del producto -->
+<!ELEMENT descripcion (#PCDATA)> <!-- Descripción del producto -->
+
+<!-- Elemento para promociones, vacío pero puede referenciar productos -->
+<!ELEMENT promociones EMPTY>
+<!ATTLIST promociones
+    productoRefs IDREFS #IMPLIED <!-- Referencias a productos en promoción (opcional) -->
+>
+
+<!-- Entidad para posibles medidas (no utilizada en el DTD actual) -->
+<!ENTITY % medidas "cm|pulgadas">
+
+<!-- Elemento genérico que permite cualquier contenido (uso avanzado) -->
+<!ELEMENT any ANY>

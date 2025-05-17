@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
+<html lang="es"> <!-- Inicio del documento HTML en español -->
+<head>
+    <meta charset="UTF-8"> <!-- Codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración para dispositivos móviles -->
+    <title>PC Componentes - Inicio</title> <!-- Título de la pestaña -->
+    <link rel="stylesheet" href="styles/main.css"> <!-- Enlace a la hoja de estilos CSS -->
+</head>
+<body>
+    <!-- Menú de navegación principal -->
+    <nav id="menu-principal">
+        <img id="logo" src="images/logo.svg" width="150px" alt="Logo PC Componentes"> <!-- Logo de la página -->
+        <ul>
+            <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página de inicio -->
+            <li><a href="productos.html">Productos</a></li> <!-- Enlace a productos -->
+            <li><a href="https://www.pccomponentes.com/" target="_blank">PC Componentes Oficial</a></li> <!-- Enlace externo -->
+            <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a contacto -->
+        </ul>
+    </nav>
+
+    <!-- Contenido principal de la página -->
+    <div class="contenedor-principal">
+        <h1>Bienvenido a PC Componentes</h1> <!-- Título principal -->
+
+        <!-- Banner promocional con enlace a productos -->
+        <div class="banner">
+            <a href="productos.html">
+                <img id="foto2" src="images/banner.webp" alt="Ofertas especiales" class="imagen-enlace">
+            </a>
+        </div>
+
+        <!-- Sección de productos destacados -->
+        <div class="seccion-destacados">
+            <h2>Productos destacados</h2>
+            <ul class="lista-productos">
+                <li><b>Procesadores</b> - Las mejores marcas</li> <!-- Producto destacado -->
+                <li><i>Tarjetas gráficas</i> - Últimos modelos</li> <!-- Producto destacado -->
+                <li><u>Memorias RAM</u> - Alta velocidad</li> <!-- Producto destacado -->
+                <li>Almacenamiento - SSD y HDD</li> <!-- Producto destacado -->
+            </ul>
+
+            <!-- Tabla de ofertas de productos -->
+            <div class="productos-cuadrados tabla-estilo-pccomponentes">
+                <table id="tabla-ofertas" class="tabla-productos">
+                    <thead>
+                        <tr>
+                            <th>Producto</th> <!-- Encabezado: Producto -->
+                            <th>Precio</th> <!-- Encabezado: Precio -->
+                            <th>Descuento</th> <!-- Encabezado: Descuento -->
+                            <th>Foto</th> <!-- Encabezado: Foto -->
+                        </tr>
+                    </thead>
+                    <!-- Fila de producto: Tarjeta gráfica -->
+                    <tr>
+                        <td>RTX 4090</td>
+                        <td>€1,999</td>
+                        <td>10%</td>
+                        <td><img src="images/grafica.jpg" alt="RTX 4090"></td>
+                    </tr>
+                    <!-- Fila de producto: Procesador -->
+                    <tr>
+                        <td>Ryzen 9 7950X</td>
+                        <td>€699</td>
+                        <td>5%</td>
+                        <td><img src="images/procesador.png" alt="Ryzen 9 7950X"></td>
+                    </tr>
+                    <!-- Fila de producto: Memoria RAM -->
+                    <tr>
+                        <td>Kingston Fury Beast 16GB</td>
+                        <td>€89</td>
+                        <td>15%</td>
+                        <td><img src="images/ram.webp" alt="Kingston Fury Beast 16GB"></td>
+                    </tr>
+                    <!-- Fila de producto: SSD -->
+                    <tr>
+                        <td>Samsung 970 EVO Plus 1TB</td>
+                        <td>€129</td>
+                        <td>20%</td>
+                        <td><img src="images/ssd.webp" alt="Samsung 970 EVO Plus 1TB"></td>
+                    </tr>
+                    <!-- Fila de producto: Fuente de alimentación -->
+                    <tr>
+                        <td>Corsair RM750e 750W</td>
+                        <td>€109</td>
+                        <td>25%</td>
+                        <td><img src="images/fuente.webp" alt="Corsair RM750e 750W"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inclusión del archivo JavaScript principal -->
+    <script src="scripts/main.js"></script>
+</body>
+</html>

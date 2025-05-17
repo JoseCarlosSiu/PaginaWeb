@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Componentes - Productos</title>
+    <link rel="stylesheet" href="styles/secondary.css">
+</head>
+<body>
+<nav id="menu-secundario">
+    <!-- Logo a la izquierda -->
+    <img id="pc" src="images/logo.svg" width="150px" style="vertical-align: middle;">
+
+    <!-- Menú centrado -->
+    <div class="menu-contenido">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="https://www.pccomponentes.com/" target="_blank">PC Componentes Oficial</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- Carrito a la derecha -->
+    <div id="icono-carrito">🛒</div>
+</nav>
+
+<!-- Contenedor del carrito oculto al inicio -->
+<div class="carrito" id="carrito" style="display: none;">
+    <h2>Tu Carrito</h2>
+    <div id="items-carrito"></div>
+    <button id="vaciar-carrito">Vaciar Carrito</button>
+    <a id="comprar" href="comprar.html" class="boton-comprar">Comprar</a>
+
+</div>
+
+<div class="contenedor-productos">
+    <h1>Nuestros Productos</h1>
+
+    <!-- Procesadores -->
+    <div id="procesadores" class="categoria-producto">
+        <h2>Procesadores</h2>
+        <div class="productos-container" id="lista-procesadores"></div>
+    </div>
+
+    <!-- Tarjetas Gráficas -->
+    <div id="graficas" class="categoria-producto">
+        <h2>Tarjetas Gráficas</h2>
+        <div class="productos-container" id="lista-graficas"></div>
+    </div>
+
+    <!-- Memorias RAM -->
+    <div id="ram" class="categoria-producto">
+        <h2>Memorias RAM</h2>
+        <div class="productos-container" id="lista-ram"></div>
+    </div>
+
+    <!-- Placas Base -->
+    <div id="placasBase" class="categoria-producto">
+        <h2>Placas Base</h2>
+        <div class="productos-container" id="lista-placasBase"></div>
+    </div>
+
+    <ul class="lista-info">
+        <li><strong>🚚 Envío 24h:</strong> Recibe tus productos al día siguiente.</li>
+        <li><strong>🔒 Pago seguro:</strong> Tus transacciones están protegidas.</li>
+        <li><strong>📞 Soporte 24/7:</strong> Estamos aquí para ayudarte en cualquier momento.</li>
+        <li><strong>⭐ Garantía:</strong> Productos con garantía de calidad.</li>
+    </ul>
+</div>
+<script src="scripts/secondary.js"></script>
+
+</body>
+
+</html>

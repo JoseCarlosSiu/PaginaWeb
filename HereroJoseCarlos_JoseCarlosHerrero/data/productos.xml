@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="data/productos.xsl"?>
+<!DOCTYPE productos SYSTEM "productos.dtd">
+<productos>
+    <!-- Categoría de procesadores (CPUs) -->
+    <categoria id="cpu" nombre="Procesadores">
+        <!-- Producto: AMD Ryzen 9 7950X -->
+        <producto sku="CPU001" stock="15">
+            <nombre>AMD Ryzen 9 7950X</nombre>
+            <precio>699</precio>
+            <marca>AMD</marca>
+            <descripcion>Procesador de 16 núcleos y 32 hilos</descripcion>
+        </producto>
+        <!-- Producto: Intel Core i9-13900K -->
+        <producto sku="CPU002" stock="8">
+            <nombre>Intel Core i9-13900K</nombre>
+            <precio>649</precio>
+            <marca>Intel</marca>
+            <descripcion>Procesador de 24 núcleos (8P+16E)</descripcion>
+        </producto>
+        <!-- Producto: Intel Core i5-13600K -->
+        <producto sku="CPU003" stock="20">
+            <nombre>Intel Core i5-13600K</nombre>
+            <precio>319</precio>
+            <marca>Intel</marca>
+            <descripcion>Procesador de 14 núcleos (6P+8E)</descripcion>
+        </producto>
+        <!-- Producto: AMD Ryzen 7 7700X -->
+        <producto sku="CPU004" stock="5">
+            <nombre>AMD Ryzen 7 7700X</nombre>
+            <precio>399</precio>
+            <marca>AMD</marca>
+            <descripcion>8 núcleos y 16 hilos, 5.4GHz boost</descripcion>
+        </producto>
+        <!-- Producto: Intel Core i7-12700KF (sin stock) -->
+        <producto sku="CPU005" stock="0">
+            <nombre>Intel Core i7-12700KF</nombre>
+            <precio>379</precio>
+            <marca>Intel</marca>
+            <descripcion>12 núcleos (8P+4E), desbloqueado</descripcion>
+        </producto>
+        <!-- Producto: Intel Core i3-12100F -->
+        <producto sku="CPU006" stock="25">
+            <nombre>Intel Core i3-12100F</nombre>
+            <precio>119</precio>
+            <marca>Intel</marca>
+            <descripcion>4 núcleos, 8 hilos, ideal para presupuestos bajos</descripcion>
+        </producto>
+    </categoria>
+
+    <!-- Categoría de tarjetas gráficas (GPUs) -->
+    <categoria id="gpu" nombre="Tarjetas Gráficas">
+        <!-- Producto: NVIDIA RTX 4090 -->
+        <producto sku="GPU001" stock="5">
+            <nombre>NVIDIA RTX 4090</nombre>
+            <precio>1999</precio>
+            <marca>NVIDIA</marca>
+            <descripcion>24GB GDDR6X, 16384 CUDA Cores</descripcion>
+        </producto>
+        <!-- Producto: AMD RX 7900 XTX -->
+        <producto sku="GPU002" stock="12">
+            <nombre>AMD RX 7900 XTX</nombre>
+            <precio>1099</precio>
+            <marca>AMD</marca>
+            <descripcion>24GB GDDR6, 6144 Stream Processors</descripcion>
+        </producto>
+        <!-- Producto: NVIDIA RTX 4070 Ti -->
+        <producto sku="GPU003" stock="10">
+            <nombre>NVIDIA RTX 4070 Ti</nombre>
+            <precio>799</precio>
+            <marca>NVIDIA</marca>
+            <descripcion>12GB GDDR6X, DLSS 3.0</descripcion>
+        </producto>
+        <!-- Producto: AMD RX 7800 XT -->
+        <producto sku="GPU004" stock="6">
+            <nombre>AMD RX 7800 XT</nombre>
+            <precio>549</precio>
+            <marca>AMD</marca>
+            <descripcion>16GB GDDR6, Ray Tracing support</descripcion>
+        </producto>
+        <!-- Producto: NVIDIA RTX 3060 (sin stock) -->
+        <producto sku="GPU005" stock="0">
+            <nombre>NVIDIA RTX 3060</nombre>
+            <precio>319</precio>
+            <marca>NVIDIA</marca>
+            <descripcion>12GB GDDR6, Ideal para 1080p</descripcion>
+        </producto>
+        <!-- Producto: Intel Arc A770 -->
+        <producto sku="GPU006" stock="14">
+            <nombre>Intel Arc A770</nombre>
+            <precio>329</precio>
+            <marca>Intel</marca>
+            <descripcion>16GB GDDR6, Xe HPG architecture</descripcion>
+        </producto>
+    </categoria>
+
+    <!-- Categoría de memorias RAM -->
+    <categoria id="ram" nombre="Memorias RAM">
+        <!-- Producto: Corsair Dominator Platinum RGB 32GB -->
+        <producto sku="RAM001" stock="30">
+            <nombre>Corsair Dominator Platinum RGB 32GB</nombre>
+            <precio>199</precio>
+            <marca>Corsair</marca>
+            <descripcion>DDR5 6000MHz CL36</descripcion>
+        </producto>
+        <!-- Producto: G.Skill Trident Z5 RGB 64GB -->
+        <producto sku="RAM002" stock="25">
+            <nombre>G.Skill Trident Z5 RGB 64GB</nombre>
+            <precio>299</precio>
+            <marca>G.Skill</marca>
+            <descripcion>DDR5 6400MHz CL32</descripcion>
+        </producto>
+        <!-- Producto: Kingston Fury Beast 16GB -->
+        <producto sku="RAM003" stock="12">
+            <nombre>Kingston Fury Beast 16GB</nombre>
+            <precio>89</precio>
+            <marca>Kingston</marca>
+            <descripcion>DDR4 3200MHz CL16</descripcion>
+        </producto>
+        <!-- Producto: TeamGroup T-Force Delta RGB 32GB -->
+        <producto sku="RAM004" stock="18">
+            <nombre>TeamGroup T-Force Delta RGB 32GB</nombre>
+            <precio>139</precio>
+            <marca>TeamGroup</marca>
+            <descripcion>DDR5 6000MHz CL40</descripcion>
+        </producto>
+        <!-- Producto: Patriot Viper Steel 16GB (sin stock) -->
+        <producto sku="RAM005" stock="0">
+            <nombre>Patriot Viper Steel 16GB</nombre>
+            <precio>79</precio>
+            <marca>Patriot</marca>
+            <descripcion>DDR4 3600MHz, sin RGB</descripcion>
+        </producto>
+        <!-- Producto: Crucial Ballistix 16GB -->
+        <producto sku="RAM006" stock="22">
+            <nombre>Crucial Ballistix 16GB</nombre>
+            <precio>99</precio>
+            <marca>Crucial</marca>
+            <descripcion>DDR4 3600MHz CL16</descripcion>
+        </producto>
+    </categoria>
+
+    <!-- Categoría de placas base (Motherboards) -->
+    <categoria id="mb" nombre="Placa Base">
+        <!-- Producto: ASUS ROG Strix Z790-E Gaming -->
+        <producto sku="MB101" stock="10">
+            <nombre>ASUS ROG Strix Z790-E Gaming</nombre>
+            <precio>499</precio>
+            <marca>ASUS</marca>
+            <descripcion>Placa base ATX con soporte para DDR5 y PCIe 5.0</descripcion>
+        </producto>
+        <!-- Producto: MSI MAG B650 Tomahawk WiFi -->
+        <producto sku="MB102" stock="15">
+            <nombre>MSI MAG B650 Tomahawk WiFi</nombre>
+            <precio>259</precio>
+            <marca>MSI</marca>
+            <descripcion>Placa base AM5 con WiFi 6 y soporte para DDR5</descripcion>
+        </producto>
+        <!-- Producto: Gigabyte X670 Aorus Elite AX -->
+        <producto sku="MB103" stock="8">
+            <nombre>Gigabyte X670 Aorus Elite AX</nombre>
+            <precio>289</precio>
+            <marca>Gigabyte</marca>
+            <descripcion>Placa base AM5 con PCIe 5.0 y DDR5</descripcion>
+        </producto>
+        <!-- Producto: ASRock B550M Steel Legend -->
+        <producto sku="MB104" stock="12">
+            <nombre>ASRock B550M Steel Legend</nombre>
+            <precio>149</precio>
+            <marca>ASRock</marca>
+            <descripcion>Placa base Micro-ATX con soporte para Ryzen 5000</descripcion>
+        </producto>
+        <!-- Producto: ASUS TUF Gaming Z590-Plus WiFi -->
+        <producto sku="MB105" stock="5">
+            <nombre>ASUS TUF Gaming Z590-Plus WiFi</nombre>
+            <precio>229</precio>
+            <marca>ASUS</marca>
+            <descripcion>Placa base Intel Z590 con WiFi 6 y soporte para 11ª Gen</descripcion>
+        </producto>
+        <!-- Producto: MSI PRO Z690-A DDR4 -->
+        <producto sku="MB106" stock="7">
+            <nombre>MSI PRO Z690-A DDR4</nombre>
+            <precio>199</precio>
+            <marca>MSI</marca>
+            <descripcion>Placa base Intel Z690 con soporte para DDR4 y PCIe 4.0</descripcion>
+        </producto>
+    </categoria>
+
+    <!-- Promociones con referencia a SKUs -->
+    <promociones productoRefs="CPU001 GPU002 GPU003 MB105 RAM004" />
+
+    <!-- Información de envío express -->
+    <envio tipo="express" costo="9.99" />
+</productos>

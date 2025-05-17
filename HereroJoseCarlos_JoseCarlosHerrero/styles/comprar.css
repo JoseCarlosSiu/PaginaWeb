@@ -1,0 +1,79 @@
+        /* Estilos generales para el body: centra el contenido y aplica fondo */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        /* Contenedor principal del mensaje de agradecimiento */
+        .thank-you-container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        
+        /* Título principal */
+        h1 {
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        /* Párrafos descriptivos */
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        /* Icono animado de agradecimiento */
+        .icon {
+            font-size: 5em;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            animation: bounce 1s infinite alternate;
+        }
+        
+        /* Botón de acción */
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        /* Efecto hover para el botón */
+        .btn:hover {
+            background-color: #45a049;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Animación de aparición suave */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Animación de rebote para el icono */
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="styles/Contacto.css">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+
+    <div class="formulario-contacto">
+        <h2>Contáctanos</h2>
+        <!-- Formulario de contacto -->
+        <form id="form-contacto">
+            <!-- Campo para el nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <!-- Campo para el email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <!-- Campo para el teléfono -->
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono">
+
+            <!-- Campo para la contraseña -->
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" required>
+
+            <!-- Campo para confirmar la contraseña -->
+            <label for="confirm-password">Confirmar Contraseña:</label>
+            <input type="password" id="confirm-password" required>
+
+            <!-- Botón para enviar el formulario -->
+            <button type="submit">Enviar</button>
+
+        </form>
+    </div>
+    <!-- Inclusión del script de validación del formulario -->
+    <script src="scripts/validadorFormulario.js"></script>
+</body>
+</html>
